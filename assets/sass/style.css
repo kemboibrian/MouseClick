@@ -4389,9 +4389,13 @@ static-hero-s2
 --------------------------------------------*/
 .static-hero-s2,
 .static-hero-s3 {
-  background: url(../images/slider/slide-6.jpg) no-repeat center center;
+  background: url(../images/mouse/brainstorm-teamwork-concept-group-of-businesspeo-2025-01-10-11-21-13-utc.jpg) no-repeat center center;
+  background-size: cover; /* Ensures the image covers the section without stretching */
+  background-position: center center; /* Keeps the image centered */
   height: 930px;
+  position: relative;
 }
+
 @media (max-width: 1400px) {
   .static-hero-s2,
 .static-hero-s3 {
@@ -12616,6 +12620,55 @@ static-hero-s2
 
 
 
+.whatsapp-chat {
+  position: fixed;
+  bottom: 20vh;
+  right: 3vw;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  animation: floatBounce 2s ease-in-out infinite;
+}
+
+.whatsapp-tooltip {
+  background: #25d366;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.whatsapp-chat:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-chat {
+    bottom: 20vh;
+    right: 4vw;
+  }
+
+  .whatsapp-chat img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-tooltip {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-top: 6px;
+  }
+}
 
 
 
@@ -12624,4 +12677,33 @@ static-hero-s2
 
 
 
+@media (max-width: 767px) { /* Adjust breakpoint as needed for your mobile view */
+  .page-title {
+    padding-top: 2px; /* Reduce top padding */
+    padding-bottom: 2px; /* Reduce bottom padding */
+  }
+
+  .page-title .page-inner-wrap {
+    padding-top: 1px; /* Reduce inner wrap top padding if necessary */
+    padding-bottom: 1px; /* Reduce inner wrap bottom padding if necessary */
+  }
+
+  .page-title .container {
+    padding-top: 1px; /* Reduce container top padding if necessary */
+    padding-bottom: 1px; /* Reduce container bottom padding if necessary */
+  }
+
+  .page-title h2 {
+    margin-bottom: 1px; /* Adjust spacing below the heading */
+  }
+
+  .page-title .breadcrumb {
+    margin-bottom: 0; /* Reduce or remove bottom margin of breadcrumb */
+  }
+
+  .page-title .breadcrumb li {
+    padding-right: 1px; /* Adjust spacing between breadcrumb items */
+    padding-left: 1px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
