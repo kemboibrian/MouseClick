@@ -666,7 +666,7 @@ img {
 	#page title
 ******************************/
 .page-title {
-  background: url("../images/subscrbe-shape.png") center center/cover no-repeat local;
+  background: url("../images/mouse/business-graphs-charts-magnifying-glass-and-calc-2025-01-15-12-38-42-utc.jpg") center center/cover no-repeat local;
   width: 100%;
   height: 480px;
   text-align: center;
@@ -12686,6 +12686,7 @@ static-hero-s2
   .page-title .page-inner-wrap {
     padding-top: 1px; /* Reduce inner wrap top padding if necessary */
     padding-bottom: 1px; /* Reduce inner wrap bottom padding if necessary */
+    
   }
 
   .page-title .container {
