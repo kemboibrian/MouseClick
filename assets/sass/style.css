@@ -12509,7 +12509,7 @@ static-hero-s2
 
   .hero-content .btns .theme-btn {
       font-size: 14px !important;
-      padding: 10px 20px !important;
+      padding: 10px 40px !important;
   }
 }
 
@@ -12581,7 +12581,7 @@ static-hero-s2
 
     /* Reduce font sizes for hero titles */
     .hero-content .slide-title-sub h5{
-      font-size:18px ;
+      font-size:16px ;
       line-height: 24px;
     }
     .hero-content .slide-title h2 {
