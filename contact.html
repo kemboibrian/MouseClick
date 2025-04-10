@@ -193,33 +193,35 @@
                         </div>
                         <div class="wpo-contact-form-area">
 <form action="https://formspree.io/f/mldjapjq" method="POST">
-  <div>
-    <input type="text" name="name" placeholder="Your Name*" required>
-  </div>
-  <div>
-    <input type="email" name="email" placeholder="Your Email*" required>
-  </div>
-  <div>
-    <input type="text" name="phone" placeholder="Your Phone">
-  </div>
-  <div>
-    <select name="service" required>
-      <option disabled selected>Services</option>
-      <option>Accountancy Services</option>
-      <option>Tax Management</option>
-      <option>Payroll Management</option>
-      <option>Business Advisory</option>
-      <option>Compliance Services</option>
-    </select>
-  </div>
-  <div>
-    <textarea name="note" placeholder="Message..." required></textarea>
-  </div>
-  <div>
-    <button type="submit">Send</button>
-  </div>
+    <div>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*" required>
+    </div>
+    <div>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*" required>
+    </div>
+    <div>
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone*">
+    </div>
+    <div>
+        <select name="service" class="form-control" required>
+            <option disabled="disabled" selected="">Services</option>
+            <option>Accountancy Services</option>
+            <option>Tax Management</option>
+            <option>Payroll Management</option>
+            <option>Business Advisory</option>
+            <option>Compliance Services</option>
+        </select>
+    </div>
+    <div class="fullwidth">
+        <textarea class="form-control" name="note" id="note" placeholder="Message..." required></textarea>
+    </div>
+    <div class="submit-area">
+        <button type="submit" class="theme-btn">Send</button>
+        <div id="loader">
+            <i class="ti-reload"></i>
+        </div>
+    </div>
 </form>
-
 
                             
                         </div>
