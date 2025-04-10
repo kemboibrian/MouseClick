@@ -192,7 +192,7 @@
                             <p>Fill in the contact form</p>
                         </div>
                         <div class="wpo-contact-form-area">
-                            <form onsubmit="sendToWhatsApp(event)" class="contact-validation-active" id="contact-form-main">
+<form action="https://formspree.io/f/mldjapjq" method="POST" class="contact-validation-active" id="contact-form-main">
                                 <div>
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
                                 </div>
@@ -377,32 +377,32 @@
     <!-- All JavaScript files
     ================================================== -->
     <script>
-        function sendToWhatsApp(event) {
-          event.preventDefault(); // Stop the form from submitting the usual way
+        // function sendToWhatsApp(event) {
+        //   event.preventDefault(); // Stop the form from submitting the usual way
       
-          // Get values
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const phone = document.getElementById("phone").value.trim();
-          const service = document.querySelector("select[name='service']").value;
-          const note = document.getElementById("note").value.trim();
+        //   // Get values
+        //   const name = document.getElementById("name").value.trim();
+        //   const email = document.getElementById("email").value.trim();
+        //   const phone = document.getElementById("phone").value.trim();
+        //   const service = document.querySelector("select[name='service']").value;
+        //   const note = document.getElementById("note").value.trim();
       
-          // Validate inputs (optional but good to have)
-          if (!name || !email || !phone || !service || !note) {
-            alert("Please fill in all fields.");
-            return;
-          }
+        //   // Validate inputs (optional but good to have)
+        //   if (!name || !email || !phone || !service || !note) {
+        //     alert("Please fill in all fields.");
+        //     return;
+        //   }
       
-          // WhatsApp message
-          const message = `Hello, I'd like to inquire about:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${note}`;
+        //   // WhatsApp message
+        //   const message = `Hello, I'd like to inquire about:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${note}`;
       
-          // Redirect to WhatsApp
-          const whatsappNumber = "254727342002"; // 0727342002 in international format
-          const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        //   // Redirect to WhatsApp
+        //   const whatsappNumber = "254727342002"; // 0727342002 in international format
+        //   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
       
-          // Open WhatsApp
-          window.open(url, "_blank");
-        }
+        //   // Open WhatsApp
+        //   window.open(url, "_blank");
+        // }
       </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
